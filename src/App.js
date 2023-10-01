@@ -7,6 +7,15 @@ import SearchIcon from './search.SVG'
 
 const API_URL = 'http://www.omdbapi.com?apikey=c04494ec'
 
+fetch(`https://www.omdbapi.com/?apikey=YOUR_API_KEY&t=MovieTitle`)
+  .then((response) => response.json())
+  .then((data) => {
+    // Handle the data and update your component's state
+  })
+  .catch((error) => {
+    // Handle errors
+  });
+
 /*const movie1 = {
   Title: 'Superman, Spiderman or Batman',
   Year: '2011',
